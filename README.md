@@ -149,6 +149,45 @@ pi --minimax-api-key=<key> --minimax-api-host=<host>
                                                    └─────────┘
 ```
 
+## 🖼️ Image Paste Workaround (macOS/Ghostty)
+
+Pi has built-in image paste support (`Ctrl+V`), but some terminals (Ghostty, certain configurations) intercept this keybinding.
+
+### Using `pi-paste-image` Helper
+
+This package includes a `pi-paste-image` CLI to work around terminal conflicts:
+
+```bash
+# Take screenshot to clipboard (NOT file)
+Cmd+Control+Shift+4   # Select area → clipboard
+Cmd+Control+Shift+3   # Full screen → clipboard
+
+# In terminal (outside Pi), run:
+pi-paste-image
+# Output: /tmp/pi-clipboard-xxxxx.png
+
+# In Pi TUI, paste the path:
+"What does this show? /tmp/pi-clipboard-xxxxx.png"
+```
+
+### Install Short Alias
+
+```bash
+pi-paste-image --install-alias
+# Then use: ppi (after restart)
+```
+
+### Why This Happens
+
+| Terminal | Image Paste Support | Notes |
+|----------|---------------------|-------|
+| iTerm2 | ✅ Native | Ctrl+V works |
+| Terminal.app | ✅ Native | Ctrl+V works |
+| Ghostty | ⚠️ Partial | Ctrl+V intercepted by terminal |
+| VS Code | ⚠️ Partial | Uses web-based terminal |
+
+The workaround reads your macOS clipboard directly and saves to a temp file.
+
 ## Tools Reference
 
 ### `web_search`
