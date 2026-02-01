@@ -26,9 +26,7 @@
     "LICENSE"
   ],
   "bin": {
-    "pi-minimax-mcp": "./bin/pi-minimax-mcp.js",
-    "pi-paste-image": "./bin/pi-paste-image.mjs",
-    "ppi": "./bin/pi-paste-image.mjs"
+    "pi-minimax-mcp": "./bin/pi-minimax-mcp.js"
   },
   "pi": {
     "extensions": [
