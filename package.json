@@ -1,0 +1,61 @@
+{
+  "name": "@ameno/pi-minimax-mcp",
+  "version": "1.0.0",
+  "description": "MiniMax MCP tools for pi - Web search and image understanding via MiniMax's Model Context Protocol",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "ai",
+    "minimax",
+    "mcp",
+    "web-search",
+    "image-understanding",
+    "model-context-protocol"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "bin/",
+    "extensions/",
+    "skill/",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "pi-minimax-mcp": "./bin/pi-minimax-mcp.js"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test dist/**/*.test.js",
+    "lint": "biome check src/",
+    "format": "biome format --write src/"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameno/pi-minimax-mcp.git"
+  },
+  "author": "ameno",
+  "license": "MIT"
+}
