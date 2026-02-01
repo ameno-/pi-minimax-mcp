@@ -6,10 +6,10 @@
  *
  * @example
  * // As Pi extension
- * import minimaxMcp from "@ameno/pi-minimax-mcp/extensions";
+ * import minimaxMcp from "ameno-/pi-minimax-mcp/extensions";
  *
  * // As library
- * import { MiniMaxMcpClient } from "@ameno/pi-minimax-mcp";
+ * import { MiniMaxMcpClient } from "ameno-/pi-minimax-mcp";
  * const client = new MiniMaxMcpClient({ apiKey: "..." });
  * const results = await client.webSearch({ query: "..." });
  */

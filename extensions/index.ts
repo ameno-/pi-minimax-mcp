@@ -6,7 +6,7 @@
  * - understand_image: Image analysis and description
  *
  * Setup:
- * 1. Install: pi install npm:@ameno/pi-minimax-mcp
+ * 1. Install: pi install npm:ameno-/pi-minimax-mcp
  * 2. Get API key: https://platform.minimax.io/subscribe/coding-plan
  * 3. Set env: MINIMAX_API_KEY=your-key
  *

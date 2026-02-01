@@ -55,7 +55,7 @@ cd ~/dev/pi-minimax-mcp
 pnpm link --global
 
 # Or install from npm (once published)
-pnpm add -g @ameno/pi-minimax-mcp
+pnpm add -g ameno-/pi-minimax-mcp
 ```
 
 ## 🔧 Usage
@@ -91,7 +91,7 @@ Once installed in Pi, tools are automatically available:
 ### Programmatic
 
 ```typescript
-import { MiniMaxMcpClient } from "@ameno/pi-minimax-mcp";
+import { MiniMaxMcpClient } from "ameno-/pi-minimax-mcp";
 
 const client = new MiniMaxMcpClient({
   apiKey: process.env.MINIMAX_API_KEY!,
