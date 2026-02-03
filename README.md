@@ -28,15 +28,15 @@ MiniMax MCP tools for [Pi](https://github.com/mariozechner/pi) - Web search and 
 ### As Pi Extension
 
 ```bash
-pi install npm:@ameno-/pi-minimax-mcp
+pi install npm:@ameno/pi-minimax-mcp
 ```
 
 ### As Standalone CLI
 
 ```bash
-npm install -g @ameno-/pi-minimax-mcp
+npm install -g @ameno/pi-minimax-mcp
 # or
-pnpm add -g @ameno-/pi-minimax-mcp
+pnpm add -g @ameno/pi-minimax-mcp
 ```
 
 ## Configuration
@@ -99,7 +99,7 @@ pi-minimax-mcp init
 ### Programmatic
 
 ```typescript
-import { MiniMaxMcpClient } from "@ameno-/pi-minimax-mcp";
+import { MiniMaxMcpClient } from "@ameno/pi-minimax-mcp";
 
 const client = new MiniMaxMcpClient({
   apiKey: process.env.MINIMAX_API_KEY!,
