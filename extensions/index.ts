@@ -121,7 +121,7 @@ export default function minimaxMcp(pi: ExtensionAPI) {
     description:
       "Real-time web search via MiniMax. Best for current information, news, documentation, and facts.",
     parameters: webSearchParams,
-    async execute(_toolCallId, params, onUpdate, _ctx, signal) {
+    async execute(_toolCallId, params, signal, onUpdate, _ctx) {
       const config = getConfig();
 
       try {
@@ -199,7 +199,7 @@ export default function minimaxMcp(pi: ExtensionAPI) {
     description:
       "Analyze and describe image content via MiniMax. Best for screenshots, diagrams, photos, and visual analysis.",
     parameters: understandImageParams,
-    async execute(_toolCallId, params, onUpdate, _ctx, signal) {
+    async execute(_toolCallId, params, signal, onUpdate, _ctx) {
       const config = getConfig();
 
       try {
